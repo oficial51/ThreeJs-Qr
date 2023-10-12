@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+  
+  .element:hover {
+    .in{    rotate: 45deg;
+        animation: loader 2s infinite;}
+
+  }
+
+  .tiltElement:hover {
+    .tilt{    rotate: 45deg;
+        animation: loader 2s infinite;}
+
+  }
+
+  @keyframes loader {
+    0% {
+      rotate: 0deg;
+    }
+    25% {
+      rotate: y 90deg;
+      scale: 0.5;
+    }
+    50% {
+      rotate: 180deg;
+    }
+    75% {
+      rotate: x 270deg;
+      border-radius: 50%;
+    }
+    100% {
+      rotate: 360deg;
+    }
+  }
